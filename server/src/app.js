@@ -20,6 +20,7 @@ app.use('/v1', api);
 /* sets the home page to launch (front-end) */
 app.get('/*', (req, res) => {
     res.sendFile(path.join(__dirname, '..', 'public', 'index.html'));
+    //res.status(200).sendFile(path.join( __dirname, '..', 'public', 'index.html')); //as per comment in discord
 }); 
 // * - matches all end points that follows the slash
 
